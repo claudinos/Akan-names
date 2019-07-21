@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron">
-            WHICH DAY OF THE WEEK WERE YOU BORN
+        <div class="jumbotron" style=text-align:center >
+           <h1> WHICH DAY OF THE WEEK WERE YOU BORN</h1>
         </div>
 
     </div>
@@ -24,30 +24,30 @@
                                     A child’s name is determined by factors surrounding his or her birth.
                                     For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender. 
                                     These Akan names signify the day one is born. 
-                                   The well thought and organized naming system of the Akan’s was initiated by the ancestors and has attracted so many people’s attention as they desire to know more about these names. 
-                                    As a matter of fact, it is possible to tell what led to someone’s birth, the day they were born and their rank among the siblings just by their names.</p>
+                                </p>
 
                                     
                             </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="well" style= width:550px;>
-                            <form> 
+                            <form > 
                                 <p><b>Enter your birthday date</b></p>
                                 <p>Month : <input type="text" id="month" size="4"  required> </p>
                                 <p>Day : <input type="text" id="day" size="4" required > </p>
                                 <p>Year: <input type="text" id="year" size="4" required > </p>
                               </form>
                                 <p><b>Select your sex and click on Submit. </b></p> 
-                              <form>
-                                  <input type="radio" name="gender" id="Male">Male
+                              <form name="form">
+                                  <input type="radio" name="gender" id="Male" value="male">Male
                                               
-                                  <input type="radio" name="gender" value="Female">Female  <br> 
+                                  <input type="radio" name="gender" id="Female" value="female">Female  <br> 
                                          
                                   <button type="button" value="submit" onclick="myFunction()">Submit</button> 
                                               
                               </form> 
                               <p id="result"></p> 
+                              <p id="day"></p>
                          </div>    
                     </div>
                   </div>
@@ -58,28 +58,41 @@
     <script>
         function myFunction(){
      //Initialize Days Kwame
-     var days =["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"];
+     var days =["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
         //Initialize Months Array
         var months =["January" ,"February","March","April","May" ,"June" ,"July" ,"August","September","September","October","November","December"];
         
         //Initialize Male and Female Array
-        var Male=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw"," Kofi","Kwame"];
-        var Female=["Akosua","Adwoa","Abenaa","Akua","Yaa"," Afua","Ama"];
+        var maleNames=["Kwadwo","Kwabena","Kwaku","Yaw"," Kofi","Kwame","Kwasi"];
+        var femaleNames=["Adwoa","Abenaa","Akua","Yaa"," Afua","Ama","Akosua"];
+
         var dd=parseInt(document.getElementById("day").value);
         var mm=parseInt(document.getElementById("month").value);
         var yy=parseInt(document.getElementById("year").value);
-        
+        // var gender=document.forms["form"]["gender"].value;
         var cc=((yy-1)/100+1);
-        var result=(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
-        
+        var dayOfWeek=(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
+        var gender=document.querySelector('input[name="gender"]:checked').value;
         if(mm<1 || mm>12){
             alert("the month is invalid");
         }
         else if(dd<1 || dd>31){
             alert("the day is invalid");
         }
-        else{
-            document.getElementById("result").innerHTML=Math.round(result);
+        else if(gender==="" ){
+        alert("invalid data");
+        }
+        else if(gender==="male"){
+            // console.log(days[Math.round(dayOfWeek)-1]);
+            document.getElementById("day").innerText= days[Math.round(dayOfWeek)-1];
+
+        document.getElementById("result").innerHTML= maleNames[Math.round(dayOfWeek)-1];
+        }
+        else if(gender==="female"){
+        document.getElementById("result").innerHTML=femaleNames[Math.round(dayOfWeek)-1];
+        }
+        else {
+            document.getElementById("result").innerHTML=Math.round(dayOfWeek);
         }
     }
      </script>
