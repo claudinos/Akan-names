@@ -23,13 +23,13 @@ most people know the date of their birthday but they don't know the day of the w
  * month must be a number
 
  **Input birthday year**
- *year must be greater than zero
+ * year must be greater than zero
 
  **choose your gender**
- *then click *submit*
+ * then click submit
 
  **output**
- *According to the input you have inserted* the output must match with the Akan name of the genger you have choose
+ * According to the input you have inserted* the output must match with the Akan name of the genger you have choose
 
  ## MY PROJECT LINK
 
