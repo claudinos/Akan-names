@@ -26,4 +26,5 @@ most people know the date of their birthday but they don't know the day of the w
  *According to the input you have inserted* the output must match with the Akan name of the genger you have choose
  ##SUPPORT AND CONTACT
  contact me :claudinos1990@gmail.com
- 
+ ## LICENCE 
+ licenced by MIT copyright @ 2019 ** claudine umuhire**  
