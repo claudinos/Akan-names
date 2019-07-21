@@ -13,18 +13,18 @@ most people know the date of their birthday but they don't know the day of the w
     * HTML 
     *CSS 
     *JAVA SCRIPT
- ##BDD
+ ## BDD
  **Input birthday date**
- *birthday  DAY must be a number*
+ * birthday  DAY must be a number *
  **Input birthday month**
- *month must be a number*
+ * month must be a number *
  **Input birthday year**
  *year must be greater than zero*
  **choose your gender**
  then click *submit*
  **output**
  *According to the input you have inserted* the output must match with the Akan name of the genger you have choose
- ##SUPPORT AND CONTACT
+ ## SUPPORT AND CONTACT
  contact me :claudinos1990@gmail.com
  ## LICENCE 
  licenced by MIT copyright @ 2019 ** claudine umuhire**  
