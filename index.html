@@ -14,21 +14,20 @@
     bottom: 0;
     width: 100%;
     background-color:silver;
+    font-family: 20px;
     text-align: center;
     height: 50px;
-}
+    }
 
-.mojFooter{
-    background-color: #f8f8f8;
-    color: #00a651;
-    padding-top: 0px;
-    border-top: 1px solid #e7e7e7;
-    margin-bottom: 0px;
-}
-body{
+
+    body{
     background-image: url("https://image.made-in-china.com/2f0j00VKmEReNaJfUz/Glazed-Porcelain-Tile-Marble-Design-Athena-Wood-Grain-Dark-Grey.jpg");
     background-size: cover;
-}
+    }  
+    .one{
+        color:white;
+        font-size:20px;
+    } 
     </style>
 </head>
 <body>
@@ -36,18 +35,23 @@ body{
         <div class="jumbotron" style=text-align:center >
            <h2> WHICH DAY OF THE WEEK WERE YOU BORN</h2S>
         </div>
+        <div class="one">
+            <h2  style=text-align:center >what is Akan Names</h2>
+            <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana.
+                A child’s name is determined by factors surrounding his or her birth.
+                For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender. 
+                These Akan names signify the day one is born. </p>
+        </div>
 
     </div>
         <div class ="container">
             <div class="row">
                     <div class="col-sm-6">
                             <div class="well" style= width:500px;>
-                                <h2>what is Akan Names</h2>
-                                <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana.
-                                    A child’s name is determined by factors surrounding his or her birth.
-                                    For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender. 
-                                    These Akan names signify the day one is born. 
-                                </p>
+                                
+                                <p>webside app that helps you to guess the day you were born on and give you a Akan name depending on your gender and the date of your birthday,
+                                    most people know the date of their birthday but they don't know the day of the week they were born!
+                                    here is a way to calculate the day according to their birthday date</p>
 
                                     
                             </div>
@@ -115,7 +119,7 @@ body{
         document.getElementById("result").innerHTML="your name is "+femaleNames[Math.round(dayOfWeek)]+  " and you are born on " +days[Math.round(dayOfWeek)];
         }
         else {
-            document.getElementById("result").innerHTML=Math.round(dayOfWeek);
+        document.getElementById("result").innerHTML=Math.round(dayOfWeek);
         }
     }
      </script>
