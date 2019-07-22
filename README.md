@@ -33,6 +33,8 @@ most people know the date of their birthday but they don't know the day of the w
 
  ## MY PROJECT LINK
 
+https://claudinos.github.io/Akan-names/
+
  ## SUPPORT AND CONTACT
  contact me :claudinos1990@gmail.com
 
