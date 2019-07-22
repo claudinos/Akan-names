@@ -32,9 +32,15 @@ most people know the date of their birthday but they don't know the day of the w
  * According to the input you have inserted* the output must match with the Akan name of the genger you have choose
 
  ## MY PROJECT LINK
+<<<<<<< HEAD
  
    https://claudinos.github.io/Akan-names/  
    
+=======
+
+https://claudinos.github.io/Akan-names/
+
+>>>>>>> 7835cb4bf387d26e78c3cfc6e6458486d5305fe7
  ## SUPPORT AND CONTACT
  contact me :claudinos1990@gmail.com
 
