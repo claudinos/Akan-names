@@ -7,11 +7,34 @@
     <title>DAY</title>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <script src="dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:silver;
+    text-align: center;
+    height: 50px;
+}
+
+.mojFooter{
+    background-color: #f8f8f8;
+    color: #00a651;
+    padding-top: 0px;
+    border-top: 1px solid #e7e7e7;
+    margin-bottom: 0px;
+}
+body{
+    background-image: url("https://image.made-in-china.com/2f0j00VKmEReNaJfUz/Glazed-Porcelain-Tile-Marble-Design-Athena-Wood-Grain-Dark-Grey.jpg");
+    background-size: cover;
+}
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="jumbotron" style=text-align:center >
-           <h1> WHICH DAY OF THE WEEK WERE YOU BORN</h1>
+           <h2> WHICH DAY OF THE WEEK WERE YOU BORN</h2S>
         </div>
 
     </div>
@@ -58,13 +81,13 @@
     <script>
         function myFunction(){
      //Initialize Days Kwame
-     var days =["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+     var days =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
         //Initialize Months Array
         var months =["January" ,"February","March","April","May" ,"June" ,"July" ,"August","September","September","October","November","December"];
         
         //Initialize Male and Female Array
-        var maleNames=["Kwadwo","Kwabena","Kwaku","Yaw"," Kofi","Kwame","Kwasi"];
-        var femaleNames=["Adwoa","Abenaa","Akua","Yaa"," Afua","Ama","Akosua"];
+        var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw"," Kofi","Kwame"];
+        var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa"," Afua","Ama"];
 
         var dd=parseInt(document.getElementById("day").value);
         var mm=parseInt(document.getElementById("month").value);
@@ -84,19 +107,19 @@
         }
         else if(gender==="male"){
             // console.log(days[Math.round(dayOfWeek)-1]);
-            document.getElementById("day").innerText= days[Math.round(dayOfWeek)-1];
+            
 
-        document.getElementById("result").innerHTML= maleNames[Math.round(dayOfWeek)-1];
+        document.getElementById("result").innerHTML= "your name is "+maleNames[Math.round(dayOfWeek)] +  " and you are born on " +days[Math.round(dayOfWeek)];
         }
         else if(gender==="female"){
-        document.getElementById("result").innerHTML=femaleNames[Math.round(dayOfWeek)-1];
+        document.getElementById("result").innerHTML="your name is "+femaleNames[Math.round(dayOfWeek)]+  " and you are born on " +days[Math.round(dayOfWeek)];
         }
         else {
             document.getElementById("result").innerHTML=Math.round(dayOfWeek);
         }
     }
      </script>
-    <footer>
+    <footer  >
         <div class="footer" style="text-align:center" >
             <span>copyright by claudine @ moringaschool 2019</span>
         </div>
