@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DAY</title>
+    <title>Day</title>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <script src="dist/js/bootstrap.min.js"></script>
     <style type="text/css">
@@ -23,20 +23,28 @@
     body{
     background-image: url("https://image.made-in-china.com/2f0j00VKmEReNaJfUz/Glazed-Porcelain-Tile-Marble-Design-Athena-Wood-Grain-Dark-Grey.jpg");
     background-size: cover;
+    font-family:'Times New Roman';
     }  
     .one{
         color:white;
         font-size:20px;
+        font-family:'Times New Roman'
     } 
+    .two{
+        color:white;
+    }
+    .jombotron{
+        font-family:'Times New Roman'
+    }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron" style=text-align:center >
-           <h2> WHICH DAY OF THE WEEK WERE YOU BORN</h2S>
+        <div class="jumbotron" style=text-align:center; >
+           <h2> WHICH DAY OF THE WEEK WERE YOU BORN</h2>
         </div>
-        <div class="one">
-            <h2  style=text-align:center >what is Akan Names</h2>
+        <div class="one" >
+            <h2  style="text-align:center">what is Akan Names</h2>
             <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana.
                 A child’s name is determined by factors surrounding his or her birth.
                 For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender. 
@@ -47,7 +55,7 @@
         <div class ="container">
             <div class="row">
                     <div class="col-sm-6">
-                            <div class="well" style= width:500px;>
+                            <div class="well" style= width:500px;height:270px;font-size:20px;>
                                 
                                 <p> This webside app helps you to guess the day you were born on and give you a Akan name depending on your gender and the date of your birthday,
                                     most people know the date of their birthday but they don't know the day of the week they were born!
@@ -60,8 +68,9 @@
                         <div class="well" style= width:550px;>
                             <form > 
                                 <p><b>Enter your birthday date</b></p>
-                                <p>Month : <input type="text" id="month" size="4"  required> </p>
+                                
                                 <p>Day : <input type="text" id="day" size="4" required > </p>
+                                <p>Month : <input type="text" id="month" size="4"  required> </p>
                                 <p>Year: <input type="text" id="year" size="4" required > </p>
                             </form>
                                 <p><b>Select your sex and click on Submit. </b></p> 
@@ -80,8 +89,10 @@
             </div>
 
         </div>
-            
-    </div>
+        <div class="two">
+            <h2  style="text-align:center"> Is your time to discover your day of Birth!</h2> 
+        </div>
+    
     <script>
         function myFunction(){
      //Initialize Days Kwame
@@ -113,10 +124,10 @@
             // console.log(days[Math.round(dayOfWeek)-1]);
             
 
-        document.getElementById("result").innerHTML= "your name is "+maleNames[Math.round(dayOfWeek)] +  " and you are born on " +days[Math.round(dayOfWeek)] + dd +"/"+ mm +"/"+ yy;
+        document.getElementById("result").innerHTML= "your name is "+maleNames[Math.round(dayOfWeek)] +  " and you are born on " +days[Math.round(dayOfWeek)]+"-"+ dd +"/"+ mm +"/"+ yy;
         }
         else if(gender==="female"){
-        document.getElementById("result").innerHTML="your name is "+femaleNames[Math.round(dayOfWeek)]+  " and you are born on " +days[Math.round(dayOfWeek)] + dd +"/"+ mm +"/"+ yy;
+        document.getElementById("result").innerHTML="your name is "+femaleNames[Math.round(dayOfWeek)]+  " and you are born on " +days[Math.round(dayOfWeek)]+"-" + dd +"/"+ mm +"/"+ yy;
         }
         else {
         document.getElementById("result").innerHTML=Math.round(dayOfWeek);
@@ -130,4 +141,6 @@
     </footer>     
         </body> 
         </html>                     
+        
+
         
