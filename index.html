@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Day Checker</title>
+    <title>DAY</title>
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <script src="dist/js/bootstrap.min.js"></script>
     <style type="text/css">
@@ -18,6 +18,8 @@
     text-align: center;
     height: 50px;
     }
+
+
     body{
     background-image: url("https://image.made-in-china.com/2f0j00VKmEReNaJfUz/Glazed-Porcelain-Tile-Marble-Design-Athena-Wood-Grain-Dark-Grey.jpg");
     background-size: cover;
@@ -90,6 +92,7 @@
         //Initialize Male and Female Array
         var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw"," Kofi","Kwame"];
         var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa"," Afua","Ama"];
+
         var dd=parseInt(document.getElementById("day").value);
         var mm=parseInt(document.getElementById("month").value);
         var yy=parseInt(document.getElementById("year").value);
@@ -109,6 +112,7 @@
         else if(gender==="male"){
             // console.log(days[Math.round(dayOfWeek)-1]);
             
+
         document.getElementById("result").innerHTML= "your name is "+maleNames[Math.round(dayOfWeek)] +  " and you are born on " +days[Math.round(dayOfWeek)] + dd +"/"+ mm +"/"+ yy;
         }
         else if(gender==="female"){
